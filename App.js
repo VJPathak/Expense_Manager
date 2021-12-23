@@ -2,7 +2,7 @@
 const express = require("express");
 const app = express();
 let path = require("path");
-let routes = require("./routes/routes");
+let routes = require("./src/routes/routes");
 let session = require('express-session');
 let cookieParser = require('cookie-parser');
 
