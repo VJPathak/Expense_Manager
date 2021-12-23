@@ -1,0 +1,147 @@
+<html>
+
+    <head>
+        <title> Settings  </title>
+    </head>
+
+    <style>
+ 
+        input[type=text], select {
+          width: 50%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+          width: 50%;
+          background-color: #808080;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #808080;
+          color: black;
+        }
+        
+        .div1 {
+          border-radius: 5px;
+          background-color: #FF6F61;
+          padding: 20px;
+          width: 50%;
+          opacity: 80%;
+        }
+
+        body {
+        background-color: #92A8D1; 
+       /* background-color: #FF6F61;*/
+        }
+         
+        </style>
+    <body>
+        <br><br><br><br><br>
+
+        <form method="POST" action="/settings"> 
+            
+            <label>Change Account Name</label>
+            <input type="checkbox" name="chAccName" value="1"  onclick="OnChangeCheckbox (this)"ID="chkAssociation"/><br><br>
+            <label for="names" style="display: none;" id="txtToggle">Enter New Account Name</label><br>
+            <input type="text" name="nAccname" placeholder="Enter New Account Name" id="txtToggle1" style="display: none;"> <br>
+
+            <script type="text/javascript">
+                function OnChangeCheckbox (checkbox) {
+                    if (checkbox.checked) {
+                        document.getElementById('txtToggle').style.display="block"; 
+                        document.getElementById('txtToggle1').style.display="block";  
+                    }
+                    else {
+                        document.getElementById('txtToggle').style.display="none"; 
+                        document.getElementById('txtToggle1').style.display="none"; 
+                    }
+                }
+                
+               </script>
+
+            <label>Add New Member</label>
+            <input type="checkbox" name="addMember" value="1"  onclick="OnChangeCheckbox1 (this)"ID="chkAssociation"/><br><br>
+            <label for="names" style="display: none;" id="txtToggle2">Enter Member Email-id</label><br>
+            <input type="text" name="nMember" placeholder="Enter Member Gmail-Id" id="txtToggle3" style="display: none;"> <br>
+
+            <script type="text/javascript">
+                function OnChangeCheckbox1 (checkbox) {
+                    if (checkbox.checked) {
+                        document.getElementById('txtToggle2').style.display="block"; 
+                        document.getElementById('txtToggle3').style.display="block";  
+                    }
+                    else {
+                        document.getElementById('txtToggle2').style.display="none"; 
+                        document.getElementById('txtToggle3').style.display="none"; 
+                            }
+                    }
+    
+            </script>
+
+            <label>Remove Member</label>
+            <input type="checkbox" name="rmMember" value="1"  onclick="OnChangeCheckbox2 (this)"ID="chkAssociation"/><br><br>
+            <label for="names" style="display: none;" id="txtToggle4">Enter Member Email-Id</label><br>
+            <input type="text" name="rMember" placeholder="Enter Member Gmail-Id" id="txtToggle5" style="display: none;"> <br>
+
+            <script type="text/javascript">
+                function OnChangeCheckbox2 (checkbox) {
+                    if (checkbox.checked) {
+                        document.getElementById('txtToggle4').style.display="block"; 
+                        document.getElementById('txtToggle5').style.display="block";  
+                        }
+                    else {
+                        document.getElementById('txtToggle4').style.display="none"; 
+                        document.getElementById('txtToggle5').style.display="none"; 
+                        }
+                    }
+
+            </script>
+
+
+            <label>Delete Account</label>
+            <input type="checkbox" name="delAcc" value="1"  onclick="OnChangeCheckbox3 (this)"ID="chkAssociation"/><br><br>
+            <label for="names" style="display: none;" id="txtToggle6">Enter Account Name</label><br>
+            <input type="text" name="dAccount" placeholder="Enter Account Name" id="txtToggle7" style="display: none;"> <br>
+
+            <script type="text/javascript">
+                function OnChangeCheckbox3 (checkbox) {
+                    if (checkbox.checked) {
+                        document.getElementById('txtToggle6').style.display="block"; 
+                        document.getElementById('txtToggle7').style.display="block";  
+                        }
+                    else {
+                        document.getElementById('txtToggle6').style.display="none"; 
+                        document.getElementById('txtToggle7').style.display="none"; 
+                        }
+                    }
+
+            </script>
+
+            <input type="submit" name="submit" value="Save Changes">          
+
+           <!--  <label>Add New Member</label>
+            <input type="checkbox" name="Personal" value="0"  onclick="OnChangeCheckbox (this)"ID="chkAssociation"/><br><br>
+
+            <label>Remove Member</label>
+            <input type="checkbox" name="Personal" value="0"  onclick="OnChangeCheckbox (this)"ID="chkAssociation"/><br><br>
+
+            <label>Delete Account</label>
+            <input type="checkbox" name="Personal" value="0"  onclick="OnChangeCheckbox (this)"ID="chkAssociation"/><br><br> -->
+        </form>  
+            </center>
+            
+
+    </body>
+
+</html>

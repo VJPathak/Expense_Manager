@@ -1,0 +1,107 @@
+<html>
+
+    <head>
+        <title> Signup Page  </title>
+    </head>
+
+    <style>
+ 
+        input[type=text], select {
+          width: 50%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+
+        input[type=password], select {
+          width: 50%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+          width: 50%;
+          background-color: #808080;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #808080;
+          color: black;
+        }
+        
+        .div1 {
+          border-radius: 5px;
+          background-color: #e6e6e6;
+          padding: 20px;
+          width: 50%;
+          opacity: 90%;
+        }
+
+        body {
+        /* background-color: #92A8D1;  */
+        background-image: url("https://c0.wallpaperflare.com/preview/908/239/793/cash-currency-financial-investment.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        /* background-color: #FF6F61;*/
+        }
+         
+        </style>
+
+    <body>
+
+      <script>
+       
+        function stringlength(inputtxt, minlength, maxlength)
+        { 
+          var field = inputtxt.value; 
+          var mnlen = minlength;
+          var mxlen = maxlength;
+
+          if(field.length<mnlen || field.length> mxlen)
+          { 
+            alert("Please input the userid between " +mnlen+ " and " +mxlen+ " characters");
+            return false;
+          }
+          else
+          { 
+          alert('Your userid have accepted.');
+          return true;
+          }
+        }
+
+      </script>
+
+        <br><br><br><br><br><br>
+        <center>
+            <h1>Add Following Information For Registration</h1>
+            <div class = "div1">
+            <form method="POST" action="/signup"> 
+            <label>Full Name</label><br> 
+            <input type="text" name="name" placeholder="Enter Name"><br>
+            <label>Email</label><br> 
+            <input type="text" name="email" placeholder="Enter Email"><br>
+            <label>Password</label><br> 
+            <input type="password" name="password" placeholder="Enter Password" onclick="stringlength(password,8,12)" /><br>
+            <input type="submit" name="submit" value="Signup">    
+            </form> 
+            </div>
+            </center>
+            
+    </body>
+
+</html>
