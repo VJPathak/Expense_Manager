@@ -1,0 +1,108 @@
+<!-- <html>
+
+    <head>
+        <title> Manage Account  </title>
+    </head>
+
+
+    <style>
+
+        body {
+        background-color: #92A8D1; 
+        }
+         
+    </style>
+
+    <body>
+
+
+        <center>
+           
+            <h2>Admin :    </h2><br>
+
+            <table border="2px" width="80%" style="border-collapse: collapse; background-color: rgb(240, 240, 233);">
+                <tr>
+                    <td align="center" width="33%"><b>Account Name</b></td>
+                    <td align="center" width="33%"><b>Balance</b></td>
+                    <td align="center" width="33%"><b>View Transactions</b></td>
+                    
+                </tr>
+            </table>
+            <br>
+
+            <table border="1px" width="80%" style="border-collapse: collapse;">
+
+
+                <%
+                var arr = new Array();
+                %>
+                <tr>
+                <%
+                for ( var i = 0; i < result.length; i++ ) 
+                { 
+                    arr[i] = result[i].acc_id;
+                }  
+                function onlyUnique(value, index, self) {
+                    return self.indexOf(value) === index;
+                  }
+                var unq_accid = arr.filter(onlyUnique);                                             
+                 %> 
+
+                 <%
+
+                 var incc = new Array();
+                 var expp = new Array();
+                
+                 
+
+                for ( var i = 0; i < result.length; i++ ) 
+                 { 
+
+                    for ( var i = 0; i < result.length; i++ ) 
+                    {
+
+                        if()
+
+                    }
+
+                 }                                                    
+                  %>
+                
+                <%
+                var inc = 0;
+                for ( var i = 0; i < result.length; i++ ) 
+                { 
+                    if(result[i].Transaction_Type == 'Income')
+                    {
+                        
+                        inc = inc + parseInt(result[i].Amount, 10);
+                        
+                    }
+                }                                               
+                 %> 
+                 
+                 <%
+                var exp = 0;
+                for ( var i = 0; i < result.length; i++ ) 
+                { 
+                    if(result[i].Transaction_Type == 'Expense')
+                    {
+                        exp = exp + parseInt(result[i].Amount, 10);
+                        
+                    }
+                }                                               
+                 %>  -->
+               
+                </tr>
+
+            </table>
+<!-- 
+            <p><%= expp %></p>
+            <p><%= incc %></p>
+            <p><%= unq_accid %></p> -->
+        </center>
+
+        
+    </body>
+
+</html> 
