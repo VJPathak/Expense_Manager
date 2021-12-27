@@ -1,3 +1,4 @@
+//import { postLogin as postLogin, postSignup as postSignup, getLogout as getLogout, getCreateAccount as getCreateAccount, postCreateAccount as postCreateAccount, getSettings as getSettings, postSettings as postSettings, postTransactions as postTransactions, getManageAccount as getManageAccount } from '../controllers/controllerAuth';
 const controller = require('../controllers/controllerAuth');
 let postLogin = controller.postLogin;
 let postSignup = controller.postSignup;
@@ -8,7 +9,6 @@ let getSettings = controller.getSettings;
 let postSettings = controller.postSettings;
 let postTransactions = controller.postTransactions;
 let getManageAccount = controller.getManageAccount;
-//let getLogout = controller.getLogout;
 const express = require("express");
 let router = express.Router();
 
