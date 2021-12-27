@@ -1,2 +1,5 @@
 # Expense_Manager
-Node.js, MongoDB, Express and EJS technology used 
+Technologies Used :
+Frontend : EJS engine
+Backend : Node.js and Express 
+Database : MongoDB Atlas(Live Database)
