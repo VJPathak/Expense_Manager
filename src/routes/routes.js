@@ -71,6 +71,3 @@ router
   .get(getLogout);
 
 module.exports = router;
-
-
-
